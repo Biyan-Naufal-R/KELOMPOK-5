@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Sistem Manajemen Darah PMI')</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome will be loaded as JS to render icons as inline SVG -->
+   
     <script>
         tailwind.config = {
             theme: {
