@@ -78,7 +78,7 @@ Route::middleware(['auth', \App\Http\Middleware\CheckUserType::class . ':rumah_s
     Route::delete('/profile/staff/{id}', [RSController::class, 'deleteStaff'])->name('rs.profile.staff.delete');
 });
 
-// Simple dashboard redirect setelah login
+// dashboard redirect setelah login
 Route::get('/dashboard', function () {
     $user = Auth::user();
     if ($user->user_type === 'pmi') {
