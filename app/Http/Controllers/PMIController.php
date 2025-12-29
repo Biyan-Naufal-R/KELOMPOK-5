@@ -249,9 +249,7 @@ class PMIController extends Controller
         return view('pmi.hospitals', compact('hospitals', 'totalRequestsThisMonth'));
     }
 
-    /**
-     * Return single hospital as JSON (used by AJAX in edit modal)
-     */
+   
     public function showHospital($id)
     {
         $hospital = Hospital::findOrFail($id);
@@ -334,9 +332,7 @@ class PMIController extends Controller
         return redirect()->route('pmi.hospitals')->with('success', 'Rumah sakit berhasil diperbarui.');
     }
 
-    /**
-     * Toggle hospital status via AJAX
-     */
+   
     public function toggleHospitalStatus(Request $request, $id)
     {
         $hospital = Hospital::findOrFail($id);
