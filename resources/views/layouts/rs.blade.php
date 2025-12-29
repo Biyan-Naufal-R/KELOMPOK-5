@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Sistem Manajemen Darah RS')</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome will be loaded as JS to render icons as inline SVG -->
+    
     <script>
         tailwind.config = {
             theme: {
@@ -113,7 +113,7 @@
             });
         }, 5000);
     </script>
-    <!-- Font Awesome JS to ensure icons render as inline SVG and stay visible -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
     <script>
         try {
