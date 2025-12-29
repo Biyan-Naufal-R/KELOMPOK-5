@@ -48,7 +48,7 @@
                     <a href="{{ route('pmi.hospitals') }}" class="flex items-center p-3 rounded-lg hover:bg-red-800 {{ request()->routeIs('pmi.hospitals') ? 'bg-red-700' : '' }}">
                         <i class="fas fa-hospital-alt mr-3"></i> Data RS
                     </a>
-                    <!-- Laporan removed -->
+                   
                     <a href="{{ route('pmi.settings') }}" class="flex items-center p-3 rounded-lg hover:bg-red-800 {{ request()->routeIs('pmi.settings') ? 'bg-red-700' : '' }}">
                         <i class="fas fa-users-cog mr-3"></i> Kelola Pengguna
                     </a>
@@ -99,7 +99,7 @@
     </div>
 
     <script>
-        // Auto-hide alerts after 5 seconds
+        
         setTimeout(() => {
             const alerts = document.querySelectorAll('[class*="bg-"]');
             alerts.forEach(alert => {
@@ -112,10 +112,10 @@
         }, 5000);
     </script>
 </body>
-    <!-- Font Awesome JS to ensure icons render as inline SVG and stay visible -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
     <script>
-        // Ensure Font Awesome watches DOM changes and re-renders icons when needed
+       
         try {
             if (window.FontAwesome && FontAwesome.dom && typeof FontAwesome.dom.watch === 'function') {
                 FontAwesome.dom.watch();
@@ -124,7 +124,6 @@
             console.warn('FontAwesome watch failed', e);
         }
 
-        // Re-run watch on user interactions that previously caused icons to disappear
         ['scroll', 'click', 'resize'].forEach(evt => {
             window.addEventListener(evt, () => {
                 try {
